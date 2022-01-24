@@ -24,6 +24,7 @@
     <modules>
         <module>core</module>
         <module>versions</module>
+        <module>ui</module>
     </modules>
 
     <build>
