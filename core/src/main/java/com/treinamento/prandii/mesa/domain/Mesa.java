@@ -3,6 +3,7 @@ package com.treinamento.prandii.mesa.domain;
 import com.treinamento.prandii.item.domain.Item;
 import lombok.AccessLevel;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.CascadeType;
@@ -19,6 +20,7 @@ import java.util.List;
 @SequenceGenerator(name = "SEQ_MESA", sequenceName = "SEQ_MESA", allocationSize = 1)
 @Getter
 @Setter
+@NoArgsConstructor
 public class Mesa {
 
     @Id
@@ -35,5 +37,9 @@ public class Mesa {
     @OneToMany(mappedBy = "mesa", cascade = CascadeType.ALL, orphanRemoval = true)
     @Setter(AccessLevel.PRIVATE)
     private List<Item> itens;
+
+    public Mesa(String identificacao) {
+        this.identificacao = identificacao;
+    }
 
 }

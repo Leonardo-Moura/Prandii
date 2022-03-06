@@ -5,9 +5,9 @@
 
     <parent>
         <groupId>com.treinamento</groupId>
-        <artifactId>prandii-versions</artifactId>
+        <artifactId>prandii</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../versions/pom.xml</relativePath>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>prandii-ui</artifactId>
